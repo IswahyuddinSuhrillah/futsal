@@ -62,7 +62,7 @@ Route::get('/struk/{id}',[SewaController::class, 'struk']);
 
 // Route::get('/sewa/{id}',[SewaController::class, 'edituser']);
 Route::get('/sewa/{id}',[SewaController::class, 'updateuser']);
-Route::put('/sewa/{id}',[SewaController::class, 'uploadedit']);
+Route::put('/sewa/{id}',[SewaController::class, 'update']);
 
 Route::get('/homeuser',[SewaController::class, 'homeuser'])->middleware('verAdmin');
 
